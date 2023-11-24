@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+        <header>
+          <nav class="navbar">
+            <a class="logo" href="#">SmartMoToRs<span>.</span></a>
+            <ul class="menu-links">
+              <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="https://www.google.com/maps/place/DEDAN+KIMATHI+UNIVERSITY/@-0.3950126,36.9551816,15.28z/data=!4m10!1m2!2m1!1sdkut!3m6!1s0x1828677a4955ff13:0x7ae4dae9615396a6!8m2!3d-0.3978314!4d36.9609217!15sCgRka3V0WgYiBGRrdXSSAQp1bml2ZXJzaXR5mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJDZG1adVREZEJSUkFC4AEA!16s%2Fm%2F04q3glb?entry=ttu" target="_blank">Location</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined" style="color: white;">menu</span>
+          </nav>
+        </header>
+
+    <section class="hero-section" style="background-image: none;">
+      <div class="content">
+      <div class="car1">
+        <img src="{% static 'images/car1.png'%}" alt="car1 image">
+        <h1>$35000</h1>
+        <button><a href="{% url 'car1' %}">Vist cars</a></button>
+      </div>
+      <div class="car2">
+        <img src="{% static 'images/car4.jpg'%}" alt="car2 image">
+        <h1>$12000</h1>
+        <button><a href="{% url 'car2' %}">Visit car</a></button>
+      </div>
+      <div class="car3">
+        <img src="{% static 'images/car3.png'%}" alt="car3 image">
+        <h1>$40000</h1>
+          <button><a href="{% url 'car3' %}">Visit car</a> </button>
+      </div>
+    </div>
+        <div class="content2">
+      <div class="car4">
+        <img src="{% static 'images/me.jpg'%}" alt="car4 image">
+        <h1>$3000</h1>
+        <button><a href="{% url 'car4' %}">Visit cars</a></button>
+      </div>
+      <div class="car5">
+        <img src="{% static 'images/home2.jpg'%}" alt="car5 image">
+        <h1>$20000</h1>
+        <button><a href="{% url 'car5' %}">Visit car</a></button>
+      </div>
+      <div class="car6">
+        <img src="{% static 'images/car5.jpg'%}" alt="car6 image">
+        <h1>$1400</h1>
+        <button><a href="{% url 'car6' %}">More cars</a></button>
+      </div>
+    </div>
+    </section>
+
+    <script src="{% static 'javascript.js' %}"></script>
+</body>
+</html>

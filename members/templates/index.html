@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartMoToRs</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">SmartMoToRs<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="{% url 'products' %}">Products</a></li>
+          <li><a href="https://www.google.com/maps/place/DEDAN+KIMATHI+UNIVERSITY/@-0.3950126,36.9551816,15.28z/data=!4m10!1m2!2m1!1sdkut!3m6!1s0x1828677a4955ff13:0x7ae4dae9615396a6!8m2!3d-0.3978314!4d36.9609217!15sCgRka3V0WgYiBGRrdXSSAQp1bml2ZXJzaXR5mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJDZG1adVREZEJSUkFC4AEA!16s%2Fm%2F04q3glb?entry=ttu" target="_blank">Location</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined" style="color: black;">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Welcome to SmartMoToRs Your Premier Destination for Quality Cars!</h2>
+        <p>At SmartMoToRs, we redefine the car-buying experience, offering a curated selection of high-quality vehicles to meet every lifestyle and budget. 
+          Whether you're a first-time buyer or a seasoned car enthusiast, our platform provides a seamless and transparent process for finding your dream car.</p>
+        <p>Explore the world of automotive excellence at SmartMoToRs. Start your journey to finding the perfect car today!</p>
+        <button><a href="{% url 'products' %}">Visit now</a></button>
+      </div>
+    </section>
+    <script src="{% static 'javascript.js' %}"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .carDetails{
+            align-content: center;
+            margin-left: 10%;
+        }
+        .carDetails table tr,th{
+            border: black 10px;
+            text-decoration-color: black;
+            background-color: #4ac1f7;
+            text-align: center;
+            padding: 10px 50px 10px 50px;
+        }
+        .carDetails table td{
+            font-size: 20px;
+            padding: 50px 50px 50px 50px;
+        }
+        button{
+            text-align: center;
+            background-color: aqua;
+            color: black;
+            height: 50px;
+            width: 100px;
+            margin-left: 40%;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+        button:hover{
+            background-color: #ba2121;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>car description</title>
+</head>
+<body>
+<div class="carDetails">
+    <table>
+        <caption><h1>car details</h1></caption>
+        <tr>
+            <th>car Name</th>
+            <th>Model</th>
+            <th>price</th>
+            <th>description</th>
+        </tr>
+        <tr>
+            <td>Ferrari </td>
+            <td>Ferrari S.p.A.</td>
+            <td>$20000</td>
+            <td>Ferrari S.p.A. is an Italian luxury sports car manufacturer based in Maranello, Italy. Founded in 1939 by Enzo Ferrari, the company built its first car in 1940, adopted its current name in 1945, and began to produce its current line of road cars in 1947 </td>
+        </tr>
+</table>
+    <button onclick="alert('Order processing...')">Order Car</button><br>
+    <button><a href="{% url 'products' %}">Back</a> </button>
+</div>
+</body>
+</html>
